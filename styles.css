@@ -1,0 +1,19 @@
+header h1 {
+    font-family: smoothy, serif; 
+    font-style: italic;
+    color: white; 
+}
+
+.jumbotron {
+    background-color: rgba(143,0,5,0.8);
+    padding: 30px; 
+    margin: 0; 
+}
+
+nav {
+    background-color: rgba(33,33,33,.9);
+}
+
+nav a {
+    color: white; 
+}
