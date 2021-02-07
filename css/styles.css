@@ -41,12 +41,27 @@ h2 {
   margin-bottom: 25px; 
 }
 
+footer {
+  background-color: rgba(33, 33, 33, 0.8);
+}
+
+/* .footerDiv {
+  margin: 0; 
+  padding: 0; 
+} */
+
+#footerCredit {
+  font-size: .65rem; 
+  font-style: italic;
+  margin: 0; 
+}
+
+/* media queries */
 @media (min-width: 544px) {
   header h1 {
     font-size: 2rem; 
   }
 }
-
 @media (min-width: 768px) {
   header h1 {
     font-size: 3rem; 
@@ -62,6 +77,12 @@ h2 {
   }
   #donateBtn {
     font-size: 1.5rem; 
+  }
+  footer {
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
   }
 }
 
