@@ -1,0 +1,75 @@
+header h1 {
+  font-family: smoothy, serif;
+  font-style: italic;
+  color: white;
+  font-size: 1.75rem; }
+
+.jumbotron {
+  background-color: rgba(143, 0, 5, 0.8);
+  padding: 30px;
+  margin: 0; }
+
+#donateBtn {
+  font-size: .75rem; 
+  color: #5E8958; 
+  font-weight: bold; 
+  border-radius: 8px; 
+}
+
+nav {
+  background-color: rgba(33, 33, 33, 0.9); }
+
+nav a {
+  color: white; }
+
+h2 {
+  text-align: center; 
+  margin-top: 20px; 
+  color: rgba(143, 0, 5); 
+}
+
+.mainText {
+  max-width: 80%;
+  margin: auto;  
+}
+
+.lineBreak {
+  max-width: 80%; 
+  height: 25px; 
+  margin: auto; 
+  border-bottom:rgba(33, 33, 33, 0.9) solid 1px; 
+  margin-bottom: 25px; 
+}
+
+@media (min-width: 544px) {
+  header h1 {
+    font-size: 2rem; 
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3rem; 
+  }
+  h2 {
+    margin-top: 30px; 
+  }
+  .mainText {
+    max-width: 65%; 
+  }
+  .lineBreak {
+    max-width: 60%; 
+  }
+  #donateBtn {
+    font-size: 1.5rem; 
+  }
+}
+
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 3.5rem; 
+  }
+  #donateBtn {
+    font-size: 1.5rem; 
+  }
+}

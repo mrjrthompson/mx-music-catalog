@@ -6,45 +6,54 @@
     <title>Catalog of Mexican Music for the Oboe</title>
 
     <!-- Styles ----  -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/sgj3gro.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/sgj3gro.css"> -->
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container d-flex h-100">
             <div class="row">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-md-8 col-lg-10 justify-content-center align-self-center">
                     <h1>Catalog of Mexican Music for the Oboe</h1>
                 </div>
-                <div class="col">
-                    <button type="button" class="btn btn-light btn-lg">DONATE TODAY!</button>
+                <div class="col justify-content-center align-self-center">
+                    <button id="donateBtn" type="button" class="btn btn-light">DONATE TODAY!</button>
                 </div>
             </div>
         </div>
     </header>
-    <nav class="d-flex justify-content-around">
-                <a href="#">Home</a>
-                <a href="#">Catalog</a>
-                <a href="#">Forms</a>
-                <a href="#">Discography</a>
-                <a href="#">Contact</a>
+    <nav class=" navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#siteNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="siteNavbar">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Catalog</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Forms</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Discography</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
     <section>
         <h2>WELCOME!</h2>
+        <div class="lineBreak"></div>
         <!-- insert horizontal line -->
-        <p>
+        <p class="mainText">
             The Catalog of Mexican Music for the Oboe is the product of over four years of doctoral research. This is meant to be a resource for the oboe community to use to expand repertoire for performance and study. This collection contains both solo and chamber music for the oboe up to 10 instruments. The catalog is listed alphabetically by composer last name, but search parameters allow for instrumentation queries. Up to date, this is the most comprehensive collection of Mexican music for the oboe. I welcome composers, scholars, and performers to contribute to this catalog. Please fill out a form in the menu above to contribute a work. Recordings are featured in the Discography. New works are featured on the homepage, so please visit often!
         </p>
         <!-- insert horizontal line -->
+        <div class="lineBreak"></div>
         <div class="container">
             <div class="row">
                 <div class="col col-sm-4">
-                    <img src="" alt="">
+                    <!-- <img src="/img/enrique-amaya-Q0rRRAcYORQ-unsplash.jpg" alt=""> -->
                     <h3>Work #1</h3>
                     <p>Descriptor</p>
                 </div>
