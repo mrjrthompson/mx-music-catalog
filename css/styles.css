@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat; 
   background-attachment: fixed;
   background-size: cover; 
+  background-position: center; 
 }
 
 header h1 {
@@ -29,7 +30,8 @@ nav {
   background-color: rgba(33, 33, 33); }
 
 nav a {
-  color: white; }
+  color: white;
+ }
 
 h2 {
   text-align: center; 
@@ -50,27 +52,49 @@ h2 {
   margin-bottom: 25px; 
 }
 
+.works {
+  text-align: center; 
+}
+
 footer {
   background-color: rgba(33, 33, 33, 0.8);
 }
 
-/* .footerDiv {
-  margin: 0; 
-  padding: 0; 
-} */
+.footerContainer {
+  width: 100%; 
+}
+
+.footerDiv {
+  width: 100%; 
+}
+
+.footerLink {
+  color: white; 
+}
+
+.footerLink:hover {
+  color:rgba(143, 0, 5)
+}
+
+.socialMedia {
+  text-align: center; 
+}
 
 #footerCredit {
   font-size: .65rem; 
   font-style: italic;
-  margin: 0; 
+  text-align: center; 
 }
 
 /* media queries */
+/* small */
 /* @media (min-width: 544px) {
   header h1 {
     font-size: 2rem; 
   }
 } */
+
+/* medium */
 @media (min-width: 768px) {
   header h1 {
     font-size: 3.25rem; 
@@ -85,6 +109,10 @@ footer {
   .lineBreak {
     max-width: 60%; 
   }
+  .works {
+    padding-top: 20px; 
+  }
+
   #donateBtn {
     font-size: 1.5rem; 
   }
@@ -94,13 +122,19 @@ footer {
     bottom: 0; 
     width: 100%; 
   }
+  #footerCredit {
+    font-size: .85rem; 
+  }
 }
-
+/* large */
 @media (min-width: 992px) {
   header h1 {
     font-size: 3.5rem; 
   }
   #donateBtn {
     font-size: 1.5rem; 
+  }
+  #footerCredit {
+    font-size: 1.15rem; 
   }
 }
