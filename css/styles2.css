@@ -1,0 +1,170 @@
+/*General comments*/
+/*
+- I'd stick to 1 type of units. For example, use px or rems but not both unless there's a good reason to. (I recommend rems)
+- Same thing with colors, use hex or rgb but not both, same thing with default colors like white or black. Better yet, use variables.
+*/
+
+
+header h1 {
+  font-family: smoothy, serif;
+  font-style: italic;
+  color: white;
+  font-size: 1.75rem; 
+}
+
+.jumbotron {
+  background-color: rgba(143, 0, 5, 0.8);
+  padding: 30px;
+  margin: 0; 
+}
+
+#donateBtn {
+  font-size: .75rem; 
+  color: #5E8958; 
+  font-weight: bold; 
+  border-radius: 8px; 
+  /*I've added this in because you want your text to not be all caps - screen readers will assume it's an abbreviation and read out each letter instead of the word, so you want to set uppercase in CSS*/
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: rgba(33, 33, 33, 0.9); }
+
+nav a {
+  color: white; }
+
+h2 {
+  text-align: center; 
+  margin-top: 20px; 
+  color: rgba(143, 0, 5); 
+}
+
+.wrapper {
+  position: relative;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+}
+
+.scroll-container {
+  background-image: url('https://cdn.shoplightspeed.com/shops/617837/files/14286063/800x1024x2/selmer-selmer-student-oboe.jpg');
+/*  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  overflow: auto;*/
+}
+
+  /*You generally want to let the container div set the width of content, not constrain it individually. It's much more robust to abstract it*/
+/*.mainText {
+  max-width: 80%;
+  margin: auto;  
+}*/
+
+.main-text {
+  /*position relative is setting this as a stacking context Read more here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context; */
+  position: relative;
+  /*We're setting the margin here to offset the space for the horizontal lines*/
+  margin: 25px 0;
+}
+
+/*You probably haven't gotten to these yet, but these are pseduo elements. In CSS you can create a before and after for every element. These are commonly used in the pattern below*/
+.main-text::before,
+.main-text::after {
+  /*This content can be set to anything, like a word or character, but commonly it's set to '' which is saying, hey take up space but we'll set what it should look like with other rules*/
+  content: '';
+  /*The position absolute is saying - hey take me out of the normal document flow and then position me absolutely in relation to the nearest parent with a stacking context. Here, that's the .main-text class since it has position relative*/
+  position: absolute;
+  width: 80%;
+  border: 1px solid #333;
+  /*This below two properties are commononly used together to center absolutely positioned elements. Just memorize it/copy each time tbh*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-text::before {
+  /*The top is setting how much above the top of the stacking context should we put the before element. You can set it to anything, but you'll want to account for that elsewhere. In this case we did that by setting margin: 25px 0 for the .main-text class;*/
+  top: -15px;
+}
+
+.main-text::after {
+  /*This is the same as above, except that it's setting how much below it should be.*/
+  bottom: -15px;
+}
+
+/*This is now unused*/
+/*.lineBreak {
+  max-width: 80%; 
+  height: 25px; 
+  margin: auto; 
+  border-bottom:rgba(33, 33, 33, 0.9) solid 1px; 
+  margin-bottom: 25px; 
+}*/
+
+footer {
+  background-color: rgba(33, 33, 33, 0.8);
+}
+
+/* .footerDiv {
+  margin: 0; 
+  padding: 0; 
+} */
+
+#footerCredit {
+  font-size: .65rem; 
+  font-style: italic;
+  margin: 0; 
+}
+
+.btn-social-icon {
+  color: #fff;
+}
+
+/* media queries */
+@media (min-width: 544px) {
+  header h1 {
+    font-size: 2rem; 
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3rem; 
+  }
+  h2 {
+    margin: 0; 
+  }
+  /*You generally want to let the container div set the width of content, not constrain it individually. It's much more robust to abstract it*/
+  /*.mainText {
+    max-width: 65%; 
+  }*/
+  /*This isn't needed anymore*/
+/*  .lineBreak {
+    max-width: 60%; 
+  }*/
+  /*Instead we can retarget it as below*/
+  .main-text::before,
+  .main-text::after {
+    width: 60%;
+  }
+  #donateBtn {
+    font-size: 1.5rem; 
+  }
+  footer {
+    /*position: fixed; 
+    left: 0; 
+    bottom: 0; */
+    width: 100%; 
+  }
+}
+
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 3.5rem; 
+  }
+  #donateBtn {
+    font-size: 1.5rem; 
+  }
+}

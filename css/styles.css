@@ -24,7 +24,12 @@ header h1 {
   color: #5E8958; 
   font-weight: bold; 
   border-radius: 8px; 
+  text-transform: uppercase; 
 }
+
+/* .scroll-container {
+  background-image: url(/img/opacity25.jpg); 
+} */
 
 nav {
   background-color: rgba(33, 33, 33); }
@@ -64,12 +69,9 @@ footer {
   width: 100%; 
 }
 
-.footerDiv {
-  width: 100%; 
-}
-
 .footerLink {
-  color: white; 
+  color: white;
+  font-size: .75rem; 
 }
 
 .footerLink:hover {
@@ -85,6 +87,44 @@ footer {
   font-style: italic;
   text-align: center; 
 }
+
+.album-header {
+  padding-bottom: 1rem; 
+}
+
+.album-cover {
+  width: 300px; 
+  padding-bottom: 1rem; 
+}
+
+.tollan:hover {
+  filter: drop-shadow(0 0 0.75rem #FCE176); 
+}
+
+.oboemia:hover {
+  filter: drop-shadow(0 0 0.75rem #892B31); 
+}
+.album-link {
+  color:rgba(143, 0, 5); 
+}
+
+/* .btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); 
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(94,137,88,.2), 0 0 20px rgba(94,137,88,.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px white; 
+} */
 
 /* media queries */
 /* small */
@@ -117,11 +157,13 @@ footer {
     font-size: 1.5rem; 
   }
   footer {
-    position: fixed; 
-    left: 0; 
-    bottom: 0; 
     width: 100%; 
   }
+
+  .footerLink {
+    font-size: 1rem; 
+  }
+
   #footerCredit {
     font-size: .85rem; 
   }
@@ -133,6 +175,10 @@ footer {
   }
   #donateBtn {
     font-size: 1.5rem; 
+  }
+
+  .footerLink {
+    font-size: 1.15rem; 
   }
   #footerCredit {
     font-size: 1.15rem; 

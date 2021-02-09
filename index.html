@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <div class="wrapper">
     <header class="jumbotron jumbotron-fluid">
         <div class="container d-flex h-100">
             <div class="row">
@@ -20,7 +21,7 @@
                     <h1>Catalog of Mexican Music for the Oboe</h1>
                 </div>
                 <div class="col justify-content-center align-self-center">
-                    <button id="donateBtn" type="button" class="btn btn-light">DONATE TODAY!</button>
+                    <button id="donateBtn" type="button" class="btn btn-light btn-5">Donate Today!</button>
                 </div>
             </div>
         </div>
@@ -41,55 +42,67 @@
             </div>
         </div>
     </nav>
-    <section>
-        <!-- <img class="backgroundImg" src="/img/enrique-amaya-Q0rRRAcYORQ-unsplash.jpg" alt="Photo of La Reforma in Mexico City"> -->
-        <h2>WELCOME!</h2>
-        <div class="lineBreak"></div>
+    <main class="main">
+        <div class="scroll-container">
+            <article class="hero-text">
+                <div class="container">
+                    <h2>WELCOME!</h2>
+                    <div class="lineBreak"></div>
+                    <!-- insert horizontal line -->
+                    <p class="mainText">
+                        The Catalog of Mexican Music for the Oboe is the product of over four years of doctoral research. This is meant to be a resource for the oboe community to use to expand repertoire for performance and study. This collection contains both solo and chamber music for the oboe up to 10 instruments. The catalog is listed alphabetically by composer last name, but search parameters allow for instrumentation queries. Up to date, this is the most comprehensive collection of Mexican music for the oboe. I welcome composers, scholars, and performers to contribute to this catalog. Please fill out a form in the menu above to contribute a work. Recordings are featured in the Discography. New works are featured on the homepage, so please visit often!
+                    </p>
+                </div>
+            </article>
+                <!-- insert horizontal line -->
+                <div class="lineBreak"></div>
+                <section class="image-row p-1">
+                    <h2>Featured Albums</h2>
+                    <div class="container worksDiv">
+                        <div class="row">
+                            <div class="col-12 col-md-6 works">
+                                <h3 class="album-header"><em>Tollan</em>: Mexican Works for Oboe</h3>
+                                <a href="http:www.jonathanthompsonoboe.com/buymycd" target="_blank"><img class="album-cover tollan" src="/img/tollan.jpg" alt="Album Cover of Tollan"></a>
+                                <p class="album-info">Recorded by: Jonathan Thompson and Talar Khosdeghian
+                                <br>©2020 Equilibrium Records
+                                <br>To order, go <a class="album-link" href="http:www.jonathanthompsonoboe.com/buymycd" target="_blank">here</a>.</p>
+                            </div>
+                            <div class="col-12 col-md-6 works">
+                                <h3 class="album-header"><em>Oboemia</em>: Música Mexicana para Oboe Solo</h3>
+                                <a href="https://www.amazon.com/Oboemia-M%C3%BAsica-Mexicana-para-Oboe/dp/B00E8N31CE/ref=sr_1_1?dchild=1&keywords=oboemia+thierry&qid=1612839892&sr=8-1" target="_blank"><img src="/img/oboemia.jpg" alt="Album Cover of Oboemia" class="album-cover oboemia"></a>
+                                <p class="album-info">Recorded by Carmen Thierry
+                                <br>©2011 Tempus
+                                <br>To order, go <a class="album-link" href="https://www.amazon.com/Oboemia-M%C3%BAsica-Mexicana-para-Oboe/dp/B00E8N31CE/ref=sr_1_1?dchild=1&keywords=oboemia+thierry&qid=1612839892&sr=8-1" target="_blank">here</a>. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         <!-- insert horizontal line -->
-        <p class="mainText">
-            The Catalog of Mexican Music for the Oboe is the product of over four years of doctoral research. This is meant to be a resource for the oboe community to use to expand repertoire for performance and study. This collection contains both solo and chamber music for the oboe up to 10 instruments. The catalog is listed alphabetically by composer last name, but search parameters allow for instrumentation queries. Up to date, this is the most comprehensive collection of Mexican music for the oboe. I welcome composers, scholars, and performers to contribute to this catalog. Please fill out a form in the menu above to contribute a work. Recordings are featured in the Discography. New works are featured on the homepage, so please visit often!
-        </p>
-        <!-- insert horizontal line -->
-        <div class="lineBreak"></div>
-        <div class="container worksDiv">
-            <div class="row">
-                <div class="col-12 col-md-4 works">
-                    <h3>Work #1</h3>
-                    <p>Descriptor</p>
-                </div>
-                <div class="col-12 col-md-4 works">
-                    <h3>Work #2</h3>
-                    <p>Descriptor</p>
-                </div>
-                <div class="col-12 col-md-4 works">
-                    <h3>Work #3</h3>
-                    <p>Descriptor</p>
-                </div>
-            </div>
         </div>
-        <!-- insert horizontal line -->
-        
-    </section>
-    <footer>
-        <div class="container d-flex h-100 footerContainer">
-            <div class="row footerDiv">
+    </main>
+    
+    <footer class="footer p-3">
+        <div class="container footerContainer h-100">
+            <div class="row">
                 <div class="col col-sm-4 justify-content-center align-self-center">
-                    <ul>
-                        <ol><a href="index.html" class="active footerLink">home</a></ol>
-                        <ol><a href="#" class="footerLink">contact</a></ol>
-                        <ol><a href="#" class="footerLink">donate</a></ol>
+                    <ul class="d-flex list-inline align-items-center m-0">
+                        <li class="p-2"><a href="index.html" class="active footerLink">home</a></li>
+                        <li class="p-2"><a href="#" class="footerLink">contact</a></li>
+                        <li class="p-2"><a href="#" class="footerLink">donate</a></li>
                     </ul>
                 </div>
                 <div class="col col-sm-4 align-self-center socialMedia">
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"><span class="sr-only">Facebook</span></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"><span class="sr-only">YouTube</span></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"><span class="sr-only">Twitter</span></i></a>
                 </div>
                 <div class="col col-sm-4 align-self-center">
                     <p class="text-light" id="footerCredit">Research and design by Jonathan Thompson, DMA</p>
                 </div>
             </div>
         </div>
+    </div>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

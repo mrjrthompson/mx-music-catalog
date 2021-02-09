@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog of Mexican Music for the Oboe</title>
+
+    <!-- Styles ----  -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" /> 
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> 
+    <link rel="stylesheet" href="https://use.typekit.net/sgj3gro.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- A common pattern is to wrap everything in a wrapper div for various reasons, although typically it's literally the first thing inside the <body> element. You do not want to use <section> here - semantically a section is a part of something larger, like a <main> or <footer> not, everything. -->
+    <div class="wrapper">
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container h-100">
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-10 justify-content-center align-self-center">
+                        <h1>Catalog of Mexican Music for the Oboe</h1>
+                    </div>
+                    <div class="col justify-content-center align-self-center">
+                        <!-- I'm unsure what will eventually happen with this donate button, but my assumption is that it should be a link not a button. A <button> element is, do I need to use JS to interact with this and cause something to happen, like submitting a form or closing a modal. An <a> is used when you need to link to another page -->
+                        <button id="donateBtn" type="button" class="btn btn-light">Donate Today!</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class=" navbar navbar-expand-sm navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#siteNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="siteNavbar">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Catalog</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Forms</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Discography</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- I've added in the <main> element which semantically is saying where the main portion of your content is. -->
+        <main class="main">
+            <div class="scroll-container">
+                <!-- I've set an article here because semantically this is an article of discrete text. This helps screenreaders. it functions as a parent div -->
+                <article class="hero-text">
+                <!-- A very common pattern is to have a semantic element to start a section, and then to have <div class="container"> and the container div sets a max-width on the section to constrain it within the entire page. Then to style it, you can style the parent with a background color that stretches the entire width of the page, and then you can have the container div constrain the width of the content.  -->
+                    <div class="container">
+                        <h2 class="unstyled p-5">WELCOME!</h2>
+                        <!-- Generally if you can avoid it, you do not want empty divs - these clutter up your markup and are not semantic. Instead, you can add a border and margin to the content you want lines below. Or if those are too restrictive, you'd use the :before and :after pseudo selectors and absolute positioning to draw your decorative objects -->
+                        <!-- <div class="lineBreak"></div> -->
+                        <!-- insert horizontal line -->
+                        <!-- Generally in CSS you'll want to use class names with dashes and not camelCase . Either work but as a matter of convetion you use dashes in CSS and camelCase in JS. You also generally don't want capitalization in your class names. -->
+                        <p class="main-text">
+                            The Catalog of Mexican Music for the Oboe is the product of over four years of doctoral research. This is meant to be a resource for the oboe community to use to expand repertoire for performance and study. This collection contains both solo and chamber music for the oboe up to 10 instruments. The catalog is listed alphabetically by composer last name, but search parameters allow for instrumentation queries. Up to date, this is the most comprehensive collection of Mexican music for the oboe. I welcome composers, scholars, and performers to contribute to this catalog. Please fill out a form in the menu above to contribute a work. Recordings are featured in the Discography. New works are featured on the homepage, so please visit often!
+                        </p>
+                    </div>
+                </article>
+                <!-- insert horizontal line -->
+                <!-- Hidden for the same reason as the above identical div -->
+                <!-- <div class="lineBreak"></div> -->
+                <!-- Below I'm setting a parent section, which helps with styling. Then for accessibility - there isn't a header (like h1, h2, etc) inside of the section, so you have to manually set the role and aria-label so screenreaders know what the content is. -->
+                <section class="image-row p-5" role="contentinfo" aria-label="Works">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-sm-4">
+                                <!-- <img src="/img/enrique-amaya-Q0rRRAcYORQ-unsplash.jpg" alt=""> -->
+                                <h3>Work #1</h3>
+                                <p>Descriptor</p>
+                            </div>
+                            <div class="col col-sm-4">
+                                <!-- <img src="" alt=""> -->
+                                <h3>Work #2</h3>
+                                <p>Descriptor</p>
+                            </div>
+                            <div class="col col-sm-4">
+                                <!-- <img src="" alt=""> -->
+                                <h3>Work #3</h3>
+                                <p>Descriptor</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- insert horizontal line -->
+        <!-- You added a footerDiv class in a of places. You generally do not want to do that. You want to set a class on the parent, and then in CSS specify the children. So like, .footer .row ul for example -->
+        <footer class="footer p-3">
+            <!-- There was a d-flex class on this container div - that setup a flex container, and you don't want that here. That's what had changed the spacing -->
+            <div class="container h-100">
+                <div class="row">
+                    <div class="col col-sm-4 justify-content-center align-self-center">
+                        <ul class="d-flex list-inline align-items-center m-0">
+                            <!-- This wasn't quite right - they need to be li for list item, not ol for ordered list. the ol is the parent, the li are the children. -->
+                            <li class="p-2"><a href="index.html" class="active">home</a></li>
+                            <li class="p-2"><a href="#">contact</a></li>
+                            <li class="p-2"><a href="#">donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-4 justify-content-center align-self-center d-flex">
+                        <!-- These are <a> and they must always have text in them. However since you're using an icon that works visually, but screen readers need text since they can't see an icon. As such, you can add a span with this sr-only class for screen reader only, so semantically the link is there, but visually it is not. It also helps with SEO. -->
+                        <a class="btn btn-social-icon btn-facebook" href="https://facebook.com/"><i class="fa fa-facebook"><span class="sr-only">Facebook</span></i></a>
+                        <!-- You're also going to want to use https instead of http - http is now insecure and you don't want to use it -->
+                        <a class="btn btn-social-icon btn-google" href="https://youtube.com/"><i class="fa fa-youtube"><span class="sr-only">Youtube</span></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/"><i class="fa fa-twitter"><span class="sr-only">Twitter</span></i></a>
+                    </div>
+                    <div class="col col-sm-4 justify-content-end align-self-center d-flex">
+                        <p class="text-light" id="footerCredit">Research and design by Jonathan Thompson, DMA</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+</body>
+</html>
