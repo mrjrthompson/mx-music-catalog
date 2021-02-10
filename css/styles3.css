@@ -1,0 +1,227 @@
+body {
+   background-color: #BFBFBF;
+  }
+  
+  header h1 {
+    font-family: smoothy, serif;
+    font-style: italic;
+    color: white;
+    font-size: 3rem; 
+    text-align: center; 
+  }
+  
+  .jumbotron {
+    background-color: rgba(143, 0, 5);
+    padding: 30px;
+    margin: 0; }
+  
+  #donate-btn {
+    font-size: .75rem; 
+    color: #5E8958; 
+    font-weight: bold; 
+    border-radius: 8px; 
+    text-transform: uppercase; 
+  }
+  
+  /* .scroll-container {
+    background-image: url(/img/opacity25.jpg); 
+  } */
+  
+  nav {
+    background-color: rgba(33, 33, 33); }
+  
+  nav a {
+    color: white;
+   }
+  
+  h2 {
+    text-align: center; 
+    margin-top: 20px; 
+    color: rgba(143, 0, 5); 
+  }
+
+  .letter-links a {
+      color:rgba(33, 33, 33) 
+  }
+  
+  .letter-links a:hover {
+    color:rgba(143, 0, 5); 
+  }
+
+  .letter-links a .active {
+      color: #5E8958; 
+  }
+
+  .welcome-header {
+    text-transform: uppercase;
+  }
+
+  .catalog-text {
+      margin: auto; 
+      max-width: 80%; 
+  }
+
+  .catalog-letter {
+    font-family: smoothy, serif;
+    font-style: italic;
+    font-size: 5rem; 
+    margin-top: 2rem; 
+  }
+
+  .composer-cards {
+      
+  }
+  
+  .mainText {
+    max-width: 80%;
+    margin: auto;  
+  }
+  
+  .form-main {
+    width: 85%;
+    margin: auto;  
+    margin-bottom: 20px; 
+  }
+  
+  .lineBreak {
+    max-width: 80%; 
+    height: 25px; 
+    margin: auto; 
+    border-bottom:rgba(33, 33, 33, 0.9) solid 1px; 
+    margin-bottom: 25px; 
+  }
+  
+  .works {
+    text-align: center; 
+  }
+  
+  footer {
+    background-color: rgba(33, 33, 33, 0.8);
+  }
+  
+  .footerContainer {
+    width: 100%; 
+  }
+  
+  .footerLink {
+    color: white;
+    font-size: .75rem; 
+  }
+  
+  .footerLink:hover {
+    color:rgba(143, 0, 5)
+  }
+  
+  .socialMedia {
+    text-align: center; 
+  }
+  
+  #footerCredit {
+    font-size: .65rem; 
+    font-style: italic;
+    text-align: center; 
+  }
+  
+  .album-header {
+    padding-bottom: 1rem; 
+  }
+  
+  .album-cover {
+    width: 300px; 
+    padding-bottom: 1rem; 
+  }
+  
+  .tollan:hover {
+    filter: drop-shadow(0 0 0.75rem #FCE176); 
+  }
+  
+  .oboemia:hover {
+    filter: drop-shadow(0 0 0.75rem #892B31); 
+  }
+  .album-link {
+    color:rgba(143, 0, 5); 
+  }
+  
+  /* .btn-5 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); 
+  } 
+  
+  .btn-5:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(94,137,88,.2), 0 0 20px rgba(94,137,88,.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px white; 
+  } */
+  
+  /* media queries */
+  /* small */
+  /* @media (min-width: 544px) {
+    header h1 {
+      font-size: 2rem; 
+    }
+  } */
+  
+  /* medium */
+  @media (min-width: 768px) {
+    header h1 {
+      font-size: 3.25rem; 
+    }
+    h2 {
+      margin-top: 30px; 
+    }
+
+    .letter-links {
+        font-size: 1.5rem; 
+    }
+  
+    .mainText {
+      max-width: 65%; 
+    }
+    .lineBreak {
+      max-width: 60%; 
+    }
+    .works {
+      padding-top: 20px; 
+    }
+  
+    #donate-btn {
+      font-size: 1.5rem; 
+    }
+    footer {
+      width: 100%; 
+    }
+  
+    .footerLink {
+      font-size: 1rem; 
+    }
+  
+    #footerCredit {
+      font-size: .85rem; 
+    }
+  }
+  /* large */
+  @media (min-width: 992px) {
+    header h1 {
+      font-size: 3.5rem; 
+    }
+    #donate-btn {
+      font-size: 1.5rem; 
+    }
+    .letter-links {
+        font-size: 2rem; 
+    }
+
+    .footerLink {
+      font-size: 1.15rem; 
+    }
+    #footerCredit {
+      font-size: 1.15rem; 
+    }
+  }
