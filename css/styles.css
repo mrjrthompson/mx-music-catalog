@@ -19,7 +19,7 @@ header h1 {
   padding: 30px;
   margin: 0; }
 
-#donateBtn {
+#donate-btn {
   font-size: .75rem; 
   color: #5E8958; 
   font-weight: bold; 
@@ -44,9 +44,19 @@ h2 {
   color: rgba(143, 0, 5); 
 }
 
+.welcome-header {
+  text-transform: uppercase;
+}
+
 .mainText {
   max-width: 80%;
   margin: auto;  
+}
+
+.form-main {
+  width: 85%;
+  margin: auto;  
+  margin-bottom: 20px; 
 }
 
 .lineBreak {
@@ -153,7 +163,7 @@ footer {
     padding-top: 20px; 
   }
 
-  #donateBtn {
+  #donate-btn {
     font-size: 1.5rem; 
   }
   footer {
@@ -173,7 +183,7 @@ footer {
   header h1 {
     font-size: 3.5rem; 
   }
-  #donateBtn {
+  #donate-btn {
     font-size: 1.5rem; 
   }
 
