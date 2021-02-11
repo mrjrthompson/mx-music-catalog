@@ -56,9 +56,11 @@ body {
     text-transform: uppercase;
   }
 
-  .catalog-text {
+  .catalog-text p {
+      max-width: 90%; 
       margin: auto; 
-      max-width: 80%; 
+      padding-top: 20px; 
+      padding-bottom: 30px; 
   }
 
   .catalog-letter {
@@ -87,6 +89,7 @@ body {
   .composer-cards {
     margin: 1rem auto; 
   }
+
   .mainText {
     max-width: 80%;
     margin: auto;  
@@ -205,6 +208,11 @@ body {
     .works {
       padding-top: 20px; 
     }
+
+    .catalog-text p {
+      max-width: 65%; 
+      margin: auto; 
+  }
   
     #donate-btn {
       font-size: 1.5rem; 
