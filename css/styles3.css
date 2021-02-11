@@ -68,10 +68,25 @@ body {
     margin-top: 2rem; 
   }
 
-  .composer-cards {
-      
+  .composer-name {
+      color: #BFBFBF; 
+  }
+
+  .work-title {
+    font-style: italic; 
+  }
+
+  .work-date {
+    font-style: normal; 
+  }
+
+  .label-name {
+    font-style: italic;
   }
   
+  .composer-cards {
+    margin: 1rem auto; 
+  }
   .mainText {
     max-width: 80%;
     margin: auto;  
